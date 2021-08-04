@@ -192,6 +192,7 @@ main{
 #partners{
     @extend %flex-row;
     justify-content: space-between;
+    align-items: center;
 
     img{
         width: calc(100% / 10);

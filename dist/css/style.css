@@ -124,7 +124,8 @@ main {
       height: auto; }
 
 #partners {
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
   #partners img {
     width: calc(100% / 10);
     height: auto; }
