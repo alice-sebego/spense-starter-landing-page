@@ -1,8 +1,69 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+header nav, header nav #main-menu, main {
+  display: flex;
+  flex-direction: row; }
+
 *, ::before, ::after {
   box-sizing: border-box;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-family: "Ubuntu", sans-serif; }
+
+.container {
+  padding: 5vh 18vw; }
+
+header #celebrate {
+  padding: 2vh 4vw;
+  background: #000;
+  color: #eee;
+  text-align: center;
+  font-size: smaller;
+  letter-spacing: .03em;
+  font-weight: 600; }
+  header #celebrate a {
+    color: #eee; }
+header nav {
+  background: rgba(221, 221, 221, 0.4);
+  justify-content: space-between;
+  font-weight: bold; }
+  header nav a {
+    color: #000;
+    text-decoration: none; }
+  header nav #logo {
+    display: flex;
+    align-items: center; }
+    header nav #logo p {
+      display: block;
+      text-transform: lowercase;
+      letter-spacing: .02em;
+      font-size: larger; }
+  header nav #main-menu {
+    justify-content: center;
+    align-items: center; }
+    header nav #main-menu li {
+      display: inline-block;
+      margin: 0 1vw; }
+header #login button {
+  border: none;
+  padding: 2vh 2vw;
+  border-radius: .4em;
+  font-weight: 700;
+  letter-spacing: .02em; }
+header #login button:nth-child(1) {
+  background-color: transparent; }
+header #login button:nth-child(2) {
+  background-color: #000;
+  color: #eee; }
+
+main {
+  background: rgba(221, 221, 221, 0.4); }
+  main #description {
+    width: 60%; }
+  main #illustration {
+    width: 40%; }
+    main #illustration img {
+      width: 100%;
+      height: auto; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,104 @@
 @import "./base";
+@import "./placeholder";
 
 *, ::before, ::after{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: $font-stack;
+}
+
+.container{
+    padding: 5vh 18vw;
+}
+
+header{
+
+    #celebrate{
+        padding: 2vh 4vw;
+        background: $primary-color;
+        color: $white-color;
+        text-align: center;
+        font-size: smaller;
+        letter-spacing: .03em;
+        font-weight: 600;
+        
+        a{
+            color: $white-color;
+        }
+    }
+
+    nav{
+        background: rgba($color: $grey-color, $alpha: 0.4);
+        @extend %flex-row;
+        justify-content: space-between;
+        font-weight: bold;
+
+        a{
+            color: $primary-color;
+            text-decoration: none;
+        }
+
+        #logo{
+            display: flex;
+            align-items: center;
+
+            p{
+                display: block;
+                text-transform: lowercase;
+                letter-spacing: .02em;
+                font-size: larger;
+            }
+        }
+
+        #main-menu{
+            @extend %flex-row;
+            justify-content: center;
+            align-items: center;
+
+            li{
+                display: inline-block;
+                margin: 0 1vw;
+            }
+        }
+    }
+
+    #login{
+
+        button{
+            border: none;
+            padding: 2vh 2vw;
+            border-radius: .4em;
+            font-weight: 700;
+            letter-spacing: .02em;
+        }
+
+        button:nth-child(1){
+            background-color: transparent;
+
+        }
+
+        button:nth-child(2){
+            background-color: $primary-color;
+            color: $white-color;
+        }
+    }
+}
+
+main{
+    @extend %flex-row;
+    background: rgba($color: $grey-color, $alpha: 0.4);
+
+    #description{
+        width: 60%;
+    }
+
+    #illustration{
+        width: 40%;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
 }
