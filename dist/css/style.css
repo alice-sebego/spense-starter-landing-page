@@ -11,7 +11,10 @@ header nav, header nav #main-menu, main {
   font-family: "Ubuntu", sans-serif; }
 
 .container {
-  padding: 5vh 18vw; }
+  padding: 5vh 15vw; }
+
+.content {
+  width: 80%; }
 
 header #celebrate {
   padding: 2vh 4vw;
@@ -59,7 +62,41 @@ header #login button:nth-child(2) {
 main {
   background: rgba(221, 221, 221, 0.4); }
   main #description {
-    width: 60%; }
+    width: 60%;
+    color: #333;
+    padding: 5vh 0; }
+    main #description h1, main #description p {
+      display: inline-block;
+      padding: 2vh 0 1vh 0; }
+    main #description p {
+      font-size: 0.9em; }
+    main #description ul {
+      list-style-type: none;
+      display: inline-block;
+      margin-top: 3vh; }
+      main #description ul li {
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        font-size: .9em; }
+        main #description ul li::before {
+          content: url("../assets/checkmark.svg");
+          padding-right: .8em; }
+    main #description form {
+      margin-top: 5vh; }
+      main #description form input {
+        padding: .8em;
+        border-radius: .4em;
+        font-weight: 700;
+        letter-spacing: .02em; }
+      main #description form input[type="email"] {
+        border: 1px solid #ddd; }
+        main #description form input[type="email"]::placeholder {
+          text-align: center; }
+      main #description form input[type="submit"] {
+        background-color: #000;
+        color: #eee;
+        border: 1px solid #000; }
   main #illustration {
     width: 40%; }
     main #illustration img {
