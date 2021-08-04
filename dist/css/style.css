@@ -4,6 +4,12 @@ header nav, header nav #main-menu, main {
   display: flex;
   flex-direction: row; }
 
+header #login button:nth-child(2), main #description form input[type="submit"], main #illustration .card button {
+  background-color: #000;
+  color: #eee;
+  border: 1px solid #000;
+  border-radius: .4em; }
+
 *, ::before, ::after {
   box-sizing: border-box;
   padding: 0;
@@ -15,6 +21,9 @@ header nav, header nav #main-menu, main {
 
 .content {
   width: 80%; }
+
+.bold {
+  font-weight: bold; }
 
 header #celebrate {
   padding: 2vh 4vw;
@@ -50,14 +59,10 @@ header nav {
 header #login button {
   border: none;
   padding: 2vh 2vw;
-  border-radius: .4em;
   font-weight: 700;
   letter-spacing: .02em; }
 header #login button:nth-child(1) {
   background-color: transparent; }
-header #login button:nth-child(2) {
-  background-color: #000;
-  color: #eee; }
 
 main {
   background: rgba(221, 221, 221, 0.4); }
@@ -93,12 +98,27 @@ main {
         border: 1px solid #ddd; }
         main #description form input[type="email"]::placeholder {
           text-align: center; }
-      main #description form input[type="submit"] {
-        background-color: #000;
-        color: #eee;
-        border: 1px solid #000; }
   main #illustration {
+    position: relative;
     width: 40%; }
+    main #illustration .card {
+      position: absolute;
+      top: 4vh;
+      left: 2vw;
+      width: 35%;
+      background: #eee;
+      border: 1px solid #eee;
+      padding: 1vh 1vw;
+      border-radius: .3em; }
+      main #illustration .card p {
+        display: inline-block;
+        margin: 2vh 0;
+        font-size: .9em; }
+      main #illustration .card p:nth-child(1) {
+        font-weight: 600; }
+      main #illustration .card button {
+        padding: 1vh 1vw;
+        width: 100%; }
     main #illustration img {
       width: 100%;
       height: auto; }
