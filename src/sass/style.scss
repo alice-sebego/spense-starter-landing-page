@@ -188,3 +188,13 @@ main{
         }
     }
 }
+
+#partners{
+    @extend %flex-row;
+    justify-content: space-between;
+
+    img{
+        width: calc(100% / 10);
+        height: auto;
+    }
+}

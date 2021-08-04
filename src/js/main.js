@@ -1,3 +1,5 @@
+import { logoPartners } from "./asset.js";
+
 const $header = document.querySelector("header");
 const $illustrationMain = document.querySelector("#illustration");
 
@@ -8,7 +10,6 @@ $celebrate.innerHTML = `<p>🎉 To celebrate Spence's launch, we will be waiving
 $header.prepend($celebrate);
 
 // Set a call-to-action card on illustration of main
-
 const $ctaCard = document.createElement("div");
 $ctaCard.setAttribute("class", "card");
 $ctaCard.innerHTML =  `<p>April Earnings</p>
@@ -17,4 +18,14 @@ $ctaCard.innerHTML =  `<p>April Earnings</p>
                        <button type="button">Withdraw</button>
                        `;
 $illustrationMain.appendChild($ctaCard);
+
+// Set partners on the DOM
+const $partnerSection = document.querySelector("#partners");
+
+logoPartners.forEach( logo => {
+    const $imgLogo = document.createElement("img");
+    $imgLogo.setAttribute("src", logo);
+    $partnerSection.appendChild($imgLogo);
+});
+
 
