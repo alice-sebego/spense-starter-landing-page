@@ -60,7 +60,8 @@ header #login button {
   border: none;
   padding: 2vh 2vw;
   font-weight: 700;
-  letter-spacing: .02em; }
+  letter-spacing: .02em;
+  cursor: pointer; }
 header #login button:nth-child(1) {
   background-color: transparent; }
 
@@ -98,6 +99,8 @@ main {
         border: 1px solid #ddd; }
         main #description form input[type="email"]::placeholder {
           text-align: center; }
+      main #description form input[type="submit"] {
+        cursor: pointer; }
   main #illustration {
     position: relative;
     width: 40%; }
@@ -118,7 +121,8 @@ main {
         font-weight: 600; }
       main #illustration .card button {
         padding: 1vh 1vw;
-        width: 100%; }
+        width: 100%;
+        cursor: pointer; }
     main #illustration img {
       width: 100%;
       height: auto; }

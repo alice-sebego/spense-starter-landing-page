@@ -78,6 +78,7 @@ header{
             padding: 2vh 2vw;
             font-weight: 700;
             letter-spacing: .02em;
+            cursor: pointer;
         }
 
         button:nth-child(1){
@@ -147,6 +148,7 @@ main{
 
             input[type="submit"]{
                 @extend %main-button;
+                cursor: pointer;
             }
         }
     }
@@ -178,7 +180,8 @@ main{
             button{
                 @extend %main-button;
                 padding: 1vh 1vw;
-                width: 100%; 
+                width: 100%;
+                cursor: pointer; 
             }
         }
 
