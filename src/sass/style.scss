@@ -240,3 +240,29 @@ main{
         }
     }
 }
+
+footer{
+    background: $primary-color;
+    color: $grey-more-color; 
+    @extend %flex-row;
+
+    div{
+        padding: 2vh 2vw;
+        line-height: 1.5em;
+        h3, h4{
+            color: $white-color;
+            display: inline-block;
+            margin-bottom: 2vh;
+            letter-spacing: .04em;
+        }
+
+        ul{
+            list-style-type: none;
+
+            li{
+                display: inline-block;
+                margin: 1vh 0;
+            }
+        }
+    }
+}
