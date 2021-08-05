@@ -3,11 +3,12 @@
 
 // FONT
 $font-stack: 'Ubuntu', sans-serif;
-$font-awesome-free: "Font Awesome Free 5";
-$font-awesome-brands: "Font Awesome Brands";
+$font-awesome-free: "Font Awesome 5 Free";
+$font-awesome-brands: "Font Awesome 5 Brands";
 
 // COLORS
 $primary-color: #000;
 $white-color: #eee;
 $grey-color: #ddd;
 $dark-grey-color: #333;
+$bg-grey-color: rgba($color: $grey-color, $alpha: 0.4); 

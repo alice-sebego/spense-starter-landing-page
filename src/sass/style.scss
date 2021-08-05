@@ -37,7 +37,7 @@ header{
     }
 
     nav{
-        background: rgba($color: $grey-color, $alpha: 0.4);
+        background: $bg-grey-color;
         @extend %flex-row;
         justify-content: space-between;
         font-weight: bold;
@@ -93,7 +93,7 @@ header{
 
 main{
     @extend %flex-row;
-    background: rgba($color: $grey-color, $alpha: 0.4);
+    background: $bg-grey-color;
 
     #description{
         width: 60%;
@@ -197,5 +197,53 @@ main{
     img{
         width: calc(100% / 10);
         height: auto;
+    }
+}
+
+#assurance{
+
+    #secure{
+        width: 100%;
+        background: $bg-grey-color right / contain no-repeat url("../assets/phone-mockup.png");
+        border-radius: .5em;
+        @extend %flex-row;
+
+        #description-secure{
+            width: 40%;
+            color: $dark-grey-color;
+            margin-left: 5vw;
+            padding: 10vh 0;
+
+            h2, p, a{
+                display: inline-block;
+                margin-bottom: 1vh;
+            }
+            h2{
+                color: $primary-color;
+                font-size: xx-large;
+            }
+
+            p{
+                line-height: 1.5em;
+            }
+
+            a{
+                color: $dark-grey-color;
+                font-weight: bold;
+                transition: all .2s ease-in-out;
+
+                &::after{
+                    content: "\f30b";
+                    font-family: $font-awesome-free;
+                    padding: 0 .2em;
+                }
+
+                &:hover{
+                    transform: scale(1.05);
+                    font-weight: bolder;
+                }
+            }
+        }
+
     }
 }
