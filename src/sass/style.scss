@@ -212,41 +212,31 @@ main{
         @extend %flex-row;
 
         #description-secure{
-            width: 40%;
-            color: $dark-grey-color;
-            margin-left: 5vw;
-            padding: 10vh 0;
-
-            h2, p, a{
-                display: inline-block;
-                margin-bottom: 1vh;
-            }
-            h2{
-                color: $primary-color;
-                font-size: xx-large;
-            }
-
-            p{
-                line-height: 1.5em;
-            }
-
-            a{
-                color: $dark-grey-color;
-                font-weight: bold;
-                transition: all .2s ease-in-out;
-
-                &::after{
-                    content: "\f30b";
-                    font-family: $font-awesome-free;
-                    padding: 0 .2em;
-                }
-
-                &:hover{
-                    transform: scale(1.05);
-                    font-weight: bolder;
-                }
-            }
+        @extend %description-section;
         }
 
+    }
+}
+
+#demo{
+    @extend %flex-row;
+
+    #video-demo{
+        width: 60%;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    #description-demo{
+        @extend %description-section;
+        h2{
+            font-size:x-large;
+        }
+
+        a{
+            text-transform: capitalize;
+        }
     }
 }

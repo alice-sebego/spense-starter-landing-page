@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
-header nav, header nav #main-menu, main, #partners, #assurance #secure {
+header nav, header nav #main-menu, main, #partners, #assurance #secure, #demo {
   display: flex;
   flex-direction: row; }
 
@@ -9,6 +9,31 @@ header #login button:nth-child(2), main #description form input[type="submit"], 
   color: #eee;
   border: 1px solid #000;
   border-radius: .4em; }
+
+#assurance #secure #description-secure, #demo #description-demo {
+  width: 40%;
+  color: #333;
+  margin-left: 5vw;
+  padding: 10vh 0; }
+  #assurance #secure #description-secure h2, #demo #description-demo h2, #assurance #secure #description-secure p, #demo #description-demo p, #assurance #secure #description-secure a, #demo #description-demo a {
+    display: inline-block;
+    margin-bottom: 1vh; }
+  #assurance #secure #description-secure h2, #demo #description-demo h2 {
+    color: #000;
+    font-size: xx-large; }
+  #assurance #secure #description-secure p, #demo #description-demo p {
+    line-height: 1.5em; }
+  #assurance #secure #description-secure a, #demo #description-demo a {
+    color: #333;
+    font-weight: bold;
+    transition: all .2s ease-in-out; }
+    #assurance #secure #description-secure a::after, #demo #description-demo a::after {
+      content: "\f30b";
+      font-family: "Font Awesome 5 Free";
+      padding: 0 .2em; }
+    #assurance #secure #description-secure a:hover, #demo #description-demo a:hover {
+      transform: scale(1.05);
+      font-weight: bolder; }
 
 *, ::before, ::after {
   box-sizing: border-box;
@@ -138,29 +163,15 @@ main {
   width: 100%;
   background: rgba(221, 221, 221, 0.4) right/contain no-repeat url("../assets/phone-mockup.png");
   border-radius: .5em; }
-  #assurance #secure #description-secure {
-    width: 40%;
-    color: #333;
-    margin-left: 5vw;
-    padding: 10vh 0; }
-    #assurance #secure #description-secure h2, #assurance #secure #description-secure p, #assurance #secure #description-secure a {
-      display: inline-block;
-      margin-bottom: 1vh; }
-    #assurance #secure #description-secure h2 {
-      color: #000;
-      font-size: xx-large; }
-    #assurance #secure #description-secure p {
-      line-height: 1.5em; }
-    #assurance #secure #description-secure a {
-      color: #333;
-      font-weight: bold;
-      transition: all .2s ease-in-out; }
-      #assurance #secure #description-secure a::after {
-        content: "\f30b";
-        font-family: "Font Awesome 5 Free";
-        padding: 0 .2em; }
-      #assurance #secure #description-secure a:hover {
-        transform: scale(1.05);
-        font-weight: bolder; }
+
+#demo #video-demo {
+  width: 60%; }
+  #demo #video-demo img {
+    width: 100%;
+    height: auto; }
+#demo #description-demo h2 {
+  font-size: x-large; }
+#demo #description-demo a {
+  text-transform: capitalize; }
 
 /*# sourceMappingURL=style.css.map */
