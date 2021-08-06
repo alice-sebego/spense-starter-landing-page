@@ -352,4 +352,16 @@ footer{
             }
         }
     }
+
+    footer{
+        flex-wrap: wrap;
+        div{
+            flex-direction: column;
+
+            ul{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
 }

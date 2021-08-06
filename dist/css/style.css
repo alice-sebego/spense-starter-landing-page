@@ -248,6 +248,14 @@ footer {
       width: 100%;
       margin-left: 1vw; }
       #demo #description-demo p {
-        word-break: break-word; } }
+        word-break: break-word; }
+
+  footer {
+    flex-wrap: wrap; }
+    footer div {
+      flex-direction: column; }
+      footer div ul {
+        display: flex;
+        flex-direction: column; } }
 
 /*# sourceMappingURL=style.css.map */
