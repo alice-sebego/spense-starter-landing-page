@@ -236,6 +236,18 @@ footer {
     #assurance #secure #description-secure {
       width: 80%;
       padding: 10vh 0 60vh;
-      margin: auto; } }
+      margin: auto; }
+
+  #demo {
+    flex-direction: column; }
+    #demo #video-demo {
+      order: 1;
+      width: 100%; }
+    #demo #description-demo {
+      order: 0;
+      width: 100%;
+      margin-left: 1vw; }
+      #demo #description-demo p {
+        word-break: break-word; } }
 
 /*# sourceMappingURL=style.css.map */

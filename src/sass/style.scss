@@ -334,5 +334,22 @@ footer{
         }
     }
 
-
+    #demo{
+        flex-direction: column;
+        
+        #video-demo{
+            order: 1;
+            width: 100%;
+        }
+        
+        #description-demo{
+            order: 0;
+            width: 100%;
+            margin-left: 1vw;
+            
+            p{
+                word-break: break-word;
+            }
+        }
+    }
 }
