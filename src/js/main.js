@@ -28,13 +28,13 @@ let $documentX = document.body.clientWidth;
 const displayLogoPartners = () =>{
     
     if($documentX <= 350){
-        for(let i = 0; i < logoPartners.length - 3; i++){
+        for(let i = 0; i < logoPartners.length - 5; i++){
             const $imgLogo = document.createElement("img");
             $imgLogo.setAttribute("src", logoPartners[i]);
             $partnerSection.appendChild($imgLogo);
        }
     } else if($documentX >= 350 && $documentX < 768){
-        for(let i = 0; i < logoPartners.length - 6; i++){
+        for(let i = 0; i < logoPartners.length - 3; i++){
             const $imgLogo = document.createElement("img");
             $imgLogo.setAttribute("src", logoPartners[i]);
             $partnerSection.appendChild($imgLogo);

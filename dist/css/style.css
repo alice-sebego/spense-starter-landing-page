@@ -222,6 +222,9 @@ footer {
         height: 65vh;
         object-fit: cover;
         display: block;
-        border-radius: .8em; } }
+        border-radius: .8em; }
+
+  #partners {
+    justify-content: space-evenly; } }
 
 /*# sourceMappingURL=style.css.map */
