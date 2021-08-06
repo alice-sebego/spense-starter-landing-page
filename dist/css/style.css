@@ -225,6 +225,14 @@ footer {
         border-radius: .8em; }
 
   #partners {
-    justify-content: space-evenly; } }
+    justify-content: space-evenly; }
+
+  #assurance #secure {
+    flex-direction: column;
+    background: rgba(221, 221, 221, 0.4) bottom left 120%/150% no-repeat url("../assets/phone-mockup.png"); }
+    #assurance #secure #description-secure {
+      width: 80%;
+      padding: 10vh 0 60vh;
+      margin: auto; } }
 
 /*# sourceMappingURL=style.css.map */
