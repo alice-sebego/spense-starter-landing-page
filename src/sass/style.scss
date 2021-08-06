@@ -314,6 +314,11 @@ footer{
 
     #partners{
         justify-content: space-evenly;
+
+        img{
+            width: calc(100% / 7);
+            height: auto;
+        }
     }
 
     #assurance{

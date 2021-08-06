@@ -226,6 +226,9 @@ footer {
 
   #partners {
     justify-content: space-evenly; }
+    #partners img {
+      width: calc(100% / 7);
+      height: auto; }
 
   #assurance #secure {
     flex-direction: column;
