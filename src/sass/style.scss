@@ -130,6 +130,7 @@ main{
 
         form{
             margin-top: 5vh;
+            display: flex;
 
             input{
                 padding: .8em;
@@ -140,6 +141,7 @@ main{
 
             input[type="email"]{
                 border: 1px solid $grey-color;
+                width: 50%;
 
                 &::placeholder {
                     text-align: center;
@@ -149,6 +151,7 @@ main{
             input[type="submit"]{
                 @extend %main-button;
                 cursor: pointer;
+                width: 50%;
             }
         }
     }

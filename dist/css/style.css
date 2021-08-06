@@ -117,18 +117,21 @@ main {
           content: url("../assets/checkmark.svg");
           padding-right: .8em; }
     main #description form {
-      margin-top: 5vh; }
+      margin-top: 5vh;
+      display: flex; }
       main #description form input {
         padding: .8em;
         border-radius: .4em;
         font-weight: 700;
         letter-spacing: .02em; }
       main #description form input[type="email"] {
-        border: 1px solid #ddd; }
+        border: 1px solid #ddd;
+        width: 50%; }
         main #description form input[type="email"]::placeholder {
           text-align: center; }
       main #description form input[type="submit"] {
-        cursor: pointer; }
+        cursor: pointer;
+        width: 50%; }
   main #illustration {
     position: relative;
     width: 40%;

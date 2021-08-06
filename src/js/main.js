@@ -21,11 +21,35 @@ $illustrationMain.appendChild($ctaCard);
 
 // Set partners on the DOM
 const $partnerSection = document.querySelector("#partners");
+//let $screenWindow = window.screen.width;
+//console.log($screenWindow);
+let $documentX = document.body.clientWidth;
 
-logoPartners.forEach( logo => {
-    const $imgLogo = document.createElement("img");
-    $imgLogo.setAttribute("src", logo);
-    $partnerSection.appendChild($imgLogo);
+const displayLogoPartners = () =>{
+    
+    if($documentX <= 350){
+        for(let i = 0; i < logoPartners.length - 3; i++){
+            const $imgLogo = document.createElement("img");
+            $imgLogo.setAttribute("src", logoPartners[i]);
+            $partnerSection.appendChild($imgLogo);
+       }
+    } else if($documentX >= 350 && $documentX < 768){
+        for(let i = 0; i < logoPartners.length - 6; i++){
+            const $imgLogo = document.createElement("img");
+            $imgLogo.setAttribute("src", logoPartners[i]);
+            $partnerSection.appendChild($imgLogo);
+       }
+    } else{
+        logoPartners.forEach( logo => {
+            const $imgLogo = document.createElement("img");
+            $imgLogo.setAttribute("src", logo);
+            $partnerSection.appendChild($imgLogo);
+        });
+    }
+}
+
+window.addEventListener("load", displayLogoPartners);
+document.addEventListener("resize", () => {
+    $partnerSection.innerHTML = "";
+    displayLogoPartners()
 });
-
-
