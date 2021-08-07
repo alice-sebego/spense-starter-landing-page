@@ -283,6 +283,10 @@ footer {
   main #description form input[type="email"] {
     margin-right: 1em; }
 
+  #partners img {
+    width: calc(100% / 4);
+    height: auto; }
+
   #assurance #secure {
     background: rgba(221, 221, 221, 0.4) bottom left 105%/180% no-repeat url("../assets/phone-mockup.png"); }
     #assurance #secure #description-secure {

@@ -396,6 +396,7 @@ footer{
    }
 
     main{
+
         #illustration{
             .card{
                 width: 45%;
@@ -419,6 +420,14 @@ footer{
                 } 
             } 
 
+        }
+    }
+
+    #partners{
+
+        img{
+            width: calc(100% / 4);
+            height: auto;
         }
     }
     
