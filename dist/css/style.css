@@ -92,6 +92,8 @@ header #login button {
   cursor: pointer; }
 header #login button:nth-child(1) {
   background-color: transparent; }
+header #hamburger {
+  display: none; }
 
 main {
   background: rgba(221, 221, 221, 0.4); }
@@ -257,5 +259,13 @@ footer {
       footer div ul {
         display: flex;
         flex-direction: column; } }
+@media screen and (max-width: 414px) {
+  header #main-menu, header #login {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 100vw; }
+  header #hamburger {
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */
