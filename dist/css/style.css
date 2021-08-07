@@ -279,6 +279,11 @@ footer {
   main #description p {
     line-height: 1.8em; }
   main #description form input[type="email"] {
-    margin-right: 1em; } }
+    margin-right: 1em; }
+
+  #assurance #secure {
+    background: rgba(221, 221, 221, 0.4) bottom left 105%/180% no-repeat url("../assets/phone-mockup.png"); }
+    #assurance #secure #description-secure {
+      padding: 10vh 0 40vh; } }
 
 /*# sourceMappingURL=style.css.map */

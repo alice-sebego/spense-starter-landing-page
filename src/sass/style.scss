@@ -389,7 +389,7 @@ footer{
         }
    }
 
-   main{
+    main{
         #illustration{
             .card{
                 width: 45%;
@@ -414,7 +414,19 @@ footer{
             } 
 
         }
-   }  
+    }
+    
+    #assurance{
+
+        #secure{
+            background : rgba(221, 221, 221, 0.4) bottom left 105%/180% no-repeat url("../assets/phone-mockup.png");
+            #description-secure{
+                padding: 10vh 0 40vh;
+            }
+        }
+
+    }
+
 
     
 }
