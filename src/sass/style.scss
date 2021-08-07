@@ -371,7 +371,12 @@ footer{
 }
 
 @media screen and (max-width: 414px){
-   header{
+   
+    #celebrate{
+        line-height: 1.8em;
+    }
+
+    header{
        #main-menu, #login{
            display: flex;
            flex-direction: column;
@@ -381,7 +386,35 @@ footer{
 
        #hamburger{
         display: block;
-    }
-   } 
+        }
+   }
+
+   main{
+        #illustration{
+            .card{
+                width: 45%;
+                left: 5vw;
+            }
+
+        }
+
+        #description{
+            .content{
+                width: 100%;
+            }
+
+            p{
+                line-height: 1.8em;
+            }
+
+            form{
+                input[type="email"]{
+                    margin-right: 1em;
+                } 
+            } 
+
+        }
+   }  
+
     
 }
