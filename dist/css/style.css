@@ -214,6 +214,8 @@ footer {
     main #description {
       width: 100%;
       order: 1; }
+      main #description form input[type="email"] {
+        margin-right: 1.2em; }
     main #illustration {
       width: 100%;
       order: 0; }

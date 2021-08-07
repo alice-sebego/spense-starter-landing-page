@@ -296,6 +296,12 @@ footer{
         #description{
             width: 100%;
             order: 1;
+
+            form{
+                input[type="email"]{
+                    margin-right: 1.2em;
+                }
+            } 
         }
 
         #illustration{
