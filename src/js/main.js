@@ -21,8 +21,6 @@ $illustrationMain.appendChild($ctaCard);
 
 // Set partners on the DOM
 const $partnerSection = document.querySelector("#partners");
-//let $screenWindow = window.screen.width;
-//console.log($screenWindow);
 let $documentX = document.body.clientWidth;
 
 const displayLogoPartners = () =>{
@@ -56,8 +54,7 @@ const displayLogoPartners = () =>{
 
 window.addEventListener("load", displayLogoPartners);
 window.addEventListener("resize", () => {
-    $partnerSection.innerHTML = "";
-    displayLogoPartners()
+    document.location.reload();
 });
 
 // Handle responsive menu's display for mobile view
