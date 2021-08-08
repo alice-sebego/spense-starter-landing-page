@@ -273,7 +273,7 @@ footer {
   header .display-menu {
     width: 100%;
     right: 0 !important;
-    top: 35vh;
+    top: 30vh;
     z-index: 2;
     background-color: white;
     padding: 2vh 2vw;
@@ -281,7 +281,7 @@ footer {
   header .display-login {
     width: 100%;
     right: 0 !important;
-    top: 40vh;
+    top: 35vh;
     z-index: 2;
     background-color: white;
     padding: 2vh 2vw;
