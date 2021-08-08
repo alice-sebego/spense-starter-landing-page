@@ -28,28 +28,47 @@ let $documentX = document.body.clientWidth;
 const displayLogoPartners = () =>{
     
     if($documentX <= 414){
+
         for(let i = 0; i < logoPartners.length - 5; i++){
             const $imgLogo = document.createElement("img");
             $imgLogo.setAttribute("src", logoPartners[i]);
             $partnerSection.appendChild($imgLogo);
-       }
+        }
+
     } else if($documentX >= 414 && $documentX < 768){
+        
         for(let i = 0; i < logoPartners.length - 3; i++){
             const $imgLogo = document.createElement("img");
             $imgLogo.setAttribute("src", logoPartners[i]);
             $partnerSection.appendChild($imgLogo);
-       }
-    } else{
+        }
+
+    } else {
+
         logoPartners.forEach( logo => {
             const $imgLogo = document.createElement("img");
             $imgLogo.setAttribute("src", logo);
             $partnerSection.appendChild($imgLogo);
         });
+
     }
 }
 
 window.addEventListener("load", displayLogoPartners);
-document.addEventListener("resize", () => {
+window.addEventListener("resize", () => {
     $partnerSection.innerHTML = "";
     displayLogoPartners()
+});
+
+// Handle responsive menu's display for mobile view
+const $hamburger = document.querySelector("#hamburger");
+const $mainMenu = document.querySelector("#main-menu");
+const $login = document.querySelector("#login");
+
+$hamburger.addEventListener("click", () => {
+    $hamburger.classList.toggle("open");
+    $hamburger.classList.toggle("close");
+    $mainMenu.classList.toggle("display-menu");
+    $login.classList.toggle("display-login");
+
 });

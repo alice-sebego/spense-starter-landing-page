@@ -383,17 +383,50 @@ footer{
     }
 
     header{
-       #main-menu, #login{
+        #main-menu, #login{
            display: flex;
            flex-direction: column;
            position: absolute;
            right: 100vw;
-       }
-
-       #hamburger{
-        display: block;
         }
-   }
+
+        .display-menu{
+            width: 100%;
+            right: 0 !important;
+            top: 35vh;
+            z-index: 2;
+            background-color: white;
+            padding: 2vh 2vw;
+            transition: right 0.2s cubic-bezier(0.23, 1, 0.320, 1);
+        }
+
+        .display-login{
+            width: 100%;
+            right: 0 !important;
+            top: 40vh;
+            z-index: 2;
+            background-color: white;
+            padding: 2vh 2vw;
+            transition: right 0.2s cubic-bezier(0.23, 1, 0.320, 1);
+        }
+
+        #hamburger{
+            display: block;
+            width: 35px;
+            height: 35px;
+            
+        }
+
+        .open{
+            background: url("../assets/hamburger-menu.svg") no-repeat;
+            background-size: cover;
+        }
+        
+        .close{
+            background: url("../assets/close.svg") no-repeat !important;
+            background-size: 90% auto !important;
+        }
+    }
 
     main{
 
@@ -402,7 +435,6 @@ footer{
                 width: 45%;
                 left: 5vw;
             }
-
         }
 
         #description{
