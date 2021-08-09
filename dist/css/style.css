@@ -116,7 +116,7 @@ main {
         font-weight: 600;
         font-size: .9em; }
         main #description ul li::before {
-          content: url("../assets/checkmark.svg");
+          content: url("../assets/Checkmark.svg");
           padding-right: .8em; }
     main #description form {
       margin-top: 5vh;
