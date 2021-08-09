@@ -23,7 +23,7 @@ $illustrationMain.appendChild($ctaCard);
 const $partnerSection = document.querySelector("#partners");
 let $documentX = document.body.clientWidth;
 
-const displayLogoPartners = () =>{
+const displayLogoPartners = () => {
     
     if($documentX <= 414){
 
@@ -61,11 +61,20 @@ window.addEventListener("resize", () => {
 const $hamburger = document.querySelector("#hamburger");
 const $mainMenu = document.querySelector("#main-menu");
 const $login = document.querySelector("#login");
+const $itemsMenu = document.querySelectorAll(".item-menu");
 
 $hamburger.addEventListener("click", () => {
     $hamburger.classList.toggle("open");
     $hamburger.classList.toggle("close");
     $mainMenu.classList.toggle("display-menu");
     $login.classList.toggle("display-login");
-
 });
+
+for (let item of $itemsMenu){
+    item.addEventListener("click", () => {
+        $hamburger.classList.toggle("open");
+        $hamburger.classList.toggle("close");
+        $mainMenu.classList.toggle("display-menu");
+        $login.classList.toggle("display-login"); 
+    })
+}
