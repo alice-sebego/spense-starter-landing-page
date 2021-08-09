@@ -1,3 +1,4 @@
+import _ from "lodash";
 import { logoPartners } from "./asset.js";
 
 const $header = document.querySelector("header");
@@ -70,11 +71,11 @@ $hamburger.addEventListener("click", () => {
     $login.classList.toggle("display-login");
 });
 
-for (let item of $itemsMenu){
+for(let item of $itemsMenu){
     item.addEventListener("click", () => {
         $hamburger.classList.toggle("open");
         $hamburger.classList.toggle("close");
         $mainMenu.classList.toggle("display-menu");
         $login.classList.toggle("display-login"); 
-    })
+    });
 }
