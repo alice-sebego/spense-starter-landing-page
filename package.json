@@ -5,7 +5,9 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open"
   },
   "repository": {
     "type": "git",
@@ -19,9 +21,11 @@
   },
   "homepage": "https://github.com/alice-sebego/spense-starter-landing-page#readme",
   "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "babel-loader": "^8.2.2",
     "webpack": "^5.49.0",
-    "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-cli": "^4.7.2"
   },
   "dependencies": {
     "lodash": "^4.17.21"
