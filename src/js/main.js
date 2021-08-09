@@ -54,9 +54,6 @@ const displayLogoPartners = () => {
 }
 
 window.addEventListener("load", displayLogoPartners);
-window.addEventListener("resize", () => {
-    document.location.reload();
-});
 
 // Handle responsive menu's display for mobile view
 const $hamburger = document.querySelector("#hamburger");
