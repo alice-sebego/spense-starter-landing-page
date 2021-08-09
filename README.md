@@ -1,4 +1,4 @@
-# spense-starter-landing-page
+# Spense Starter Landing Page
 Create spense starter landing page in order to practice responsive web design with HTML5, SASS and JS
 
 ## What is this ?
@@ -8,3 +8,15 @@ Here is the current template that I'm working : [Spense Starter Landing Page](ht
 
 ## Languages & Tools
 * HTML5, SASS, JavaScript
+* Webpack and Babel
+
+## Dependencies & CMD
+Watch change of style.scss : `sass --watch src/sass/style.scss:dist/css/style.css`
+
+Install all dependencies : `npm install`
+
+Compile JS files : `npm run build`
+
+Watch changes on JS files : `npm run watch`
+
+Run this project on local server : `npm run start`
